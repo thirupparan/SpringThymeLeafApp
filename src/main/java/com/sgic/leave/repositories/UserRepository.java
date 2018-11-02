@@ -6,4 +6,6 @@ import com.sgic.leave.entities.User;
 
 public interface UserRepository extends JpaRepository<User, String> {
 
+	User findOne(String email);
+
 }
